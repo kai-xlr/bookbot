@@ -7,9 +7,9 @@ def get_book_text(novel):
 def word_count(subject: str) -> int:
      return len(subject.split())
      
-def count_char(full_text):
+def count_char(text):
     duplicates = {}
-    for i in full_text:
+    for i in text:
         low = i.lower()
         if low in duplicates:
             duplicates[low] += 1
